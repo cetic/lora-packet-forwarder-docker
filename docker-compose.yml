@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  lora-packet-forwarder:
+    restart: unless-stopped
+    image: cetic/lora-packet-forwarder:latest
+    volumes:
+      - ./config:/opt/pf-config
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    dns:
+      - 8.8.8.8
