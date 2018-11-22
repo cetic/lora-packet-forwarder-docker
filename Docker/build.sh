@@ -3,7 +3,7 @@
 mkdir -p /app/build
 cd /app/build
 tar zxvf ../libmpsse-1.3.tar.gz
-cd libmpsse-1.3/src
+cd libmpsse/src
 ./configure --prefix=/usr --disable-python
 make
 make install
