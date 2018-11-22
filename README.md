@@ -88,7 +88,7 @@ To lauch the container replace :
 
 ```
 $ cd lora-packet-forwarder-docker
-$ sudo docker run -t --rm --device=/dev/bus/usb/AAAA/BBBB -v $(pwd)/config:/opt/pf-config lora-packet-forwarder
+$ sudo docker run -t --rm --device=/dev/bus/usb/AAAA/BBBB -v $(pwd)/config:/opt/pf-config ceticasbl/lora-packet-forwarder:latest
 ```
 __Warning__ : If you work with your own DNS, add the docker DNS option to change the _nameserver_ in the container configuration : `--dns=YOUR_DNS_IP_ADDR`
 

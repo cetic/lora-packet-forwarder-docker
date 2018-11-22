@@ -3,7 +3,7 @@ version: "2"
 services:
   lora-packet-forwarder:
     restart: unless-stopped
-    image: cetic/lora-packet-forwarder:latest
+    image: ceticasbl/lora-packet-forwarder:latest
     volumes:
       - ./config:/opt/pf-config
     devices:
