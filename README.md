@@ -2,6 +2,12 @@
 
 This git describes how to deploy a LoRA Packet Forwarder using Docker
 
+In this project, the lora conentrator is compose with :
+- 1 x Multitech mCard LoRa 868MHz (MTAC-LORA-868)
+- 1 x USB to Mini PCIe converter
+
+To build your lora conentrator you can follow `mirakonta/lora_gateway` instruction in this [wiki](https://github.com/mirakonta/lora_gateway/wiki/Part-2:-Hardware-modifications)
+
 ## Installation
 
 ```
@@ -88,7 +94,13 @@ __Warning__ : If you work with your own DNS, add the docker DNS option to change
 
 ## License
 
-Todo
+[License: BSD-3](https://github.com/cetic/lora-packet-forwarder-docker/blob/master/LICENSE)
+
+## Credit
+
+- [mirakonta/packet_forwarder](https://github.com/mirakonta/packet_forwarder) - License: BSD-3
+- [mirakonta/lora_gateway](https://github.com/mirakonta/lora_gateway) - License: BSD-3
+- [devttys0/libmpsse](https://github.com/devttys0/libmpsse) - License: BSD-2
 
 ## Authors
 
